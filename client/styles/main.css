@@ -2,3 +2,9 @@ body{
   padding-top:40px;
 }
 
+.post-author{
+  position:relative;
+  top:-25px;
+  right:5px;  
+}
+
