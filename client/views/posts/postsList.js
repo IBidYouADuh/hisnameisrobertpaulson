@@ -29,7 +29,7 @@ var postsData = [
 Template.postsList.helpers({
   //posts: postsData
   posts: function() {
-    return Posts.find({}, {sort:{ likeCount: -1, title: 1 }}) ;
+    return Posts.find({}, {sort:{ submitted: -1, title: 1 }}) ;
   }
 });
   
