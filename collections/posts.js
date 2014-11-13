@@ -7,8 +7,7 @@ Posts.allow({
   update: function(userId, doc){
     return !! userId;
   }
-<<<<<<< HEAD
-=======
+
 });
 
 Meteor.methods({
@@ -27,6 +26,7 @@ Meteor.methods({
     
     if (!postAttributes.title)
       throw new Meteor.Error(422, "Uh-oh! You need a URL!");
+    
     //check to make sure URL has not already been submitted
     if (postAttributes.url && duplicatePost) {
       throw new Meteor.Error(302, "This link has already been posted.", duplicatePost._id);
@@ -35,9 +35,10 @@ Meteor.methods({
     
     
     //grab the right fields, and add new fields such as: username, timestamp
-    var post =_.extend(_.pick(postAttributes, 'url', 'title', 'description'),{userId: user._id,
-                                                                              author: user.username,
-                                                                              submitted: new Date(). getTime()
+    var post =_.extend(_.pick(postAttributes, 'url', 'title', 'description'),
+        {userId: user._id,
+         author: user.username,
+         submitted: new Date(). getTime()
   });
   
   
@@ -45,5 +46,4 @@ Meteor.methods({
     
     return postId;
   }
->>>>>>> submitForm
 });

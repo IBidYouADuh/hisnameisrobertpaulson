@@ -8,12 +8,11 @@ Template.postSubmit.events({
       description: $(e.target).find('[name=post-description]').val(),
     }
     
-<<<<<<< HEAD
     post._id = Posts.insert(post);
     
     Router.go('postPage', post)
     
-=======
+
     //post._id = Posts.insert(post);
     
     Meteor.call('post', post, function(error, id){
@@ -23,7 +22,6 @@ Template.postSubmit.events({
       Router.go('postPage',{_id:id});
       
     }); 
->>>>>>> submitForm
   }
    
 });
