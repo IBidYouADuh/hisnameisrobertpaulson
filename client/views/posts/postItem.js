@@ -11,12 +11,4 @@ Template.postItem.helpers({
 
 Template.postItem.rendered = function() {
   return Holder.run();
-}
-
-Template.postItem.events({
-  'click button': function(){
-    Posts.update(this._id,{ $inc: {likeCount:1} });
-  }
-  
-  
-});
+};
