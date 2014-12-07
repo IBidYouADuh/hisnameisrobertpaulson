@@ -1,5 +1,8 @@
 body{
   padding-top:80px;
+  background-color: #dbceb8;
+  color: #7b898b;
+  font-family: Futura, Helvetica, sans-serif;
 }
 
 .post-author{
@@ -18,4 +21,18 @@ body{
 
 .col-lg-3:nth-child(4n+1){
     clear: left;
+}
+
+.aligned{
+  text-align: center;
+}
+
+.cat-paddy{
+  padding-top: 200px;
+}
+
+@media (max-width: 480px) {
+  .cat-paddy{
+    padding-top: 0;
+  }
 }

@@ -13,7 +13,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="{{activeIfTemplateIs 'postList'}}"><a href="{{pathFor 'postsList'}}">Home</a></li>
+            <li class="{{activeIfTemplateIs 'postList'}}"><a href="{{pathFor 'chooseCategories'}}">Home</a></li>
             <li class="{{activeIfTemplateIs 'aboutPage'}}"><a href="{{pathFor 'aboutPage'}}">About</a></li>
             {{#if currentUser}}
             <li class="{{activeIfTemplateIs 'postSubmit'}}"><a href="{{pathFor 'postSubmit'}}">New Post</a></li>{{/if}}
