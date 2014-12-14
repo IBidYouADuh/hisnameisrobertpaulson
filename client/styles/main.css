@@ -1,5 +1,5 @@
 body{
-  padding-top:80px;
+  /*padding-top:80px;*/
   background-color: #dbceb8;
   color: #7b898b;
   font-family: Futura, Helvetica, sans-serif;
@@ -29,6 +29,10 @@ body{
 
 .cat-paddy{
   padding-top: 200px;
+}
+
+.floater{
+  float: left;
 }
 
 @media (max-width: 480px) {

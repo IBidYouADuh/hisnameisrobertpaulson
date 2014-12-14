@@ -1,0 +1,1 @@
+Vacations = new Meteor.Collection('vacations');

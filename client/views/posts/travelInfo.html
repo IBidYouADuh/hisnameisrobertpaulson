@@ -1,0 +1,31 @@
+<template name="travelInfo">
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <form role ="form">
+    <p>From <input type="text"></p>
+    <p>Departing <input type="text" class="datepicker floater"></p>
+    <p>Returning <input type="text" class="datepicker floater"></p>
+    <p>Passenger Information</p>
+    <p>Adults</p>
+        <select name="adults" id="numberofAdults">
+          <option value="None" selected>None</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+    <p>Children</p>
+        <select name="children" id="numberofChildren">
+          <option value="None" selected>None</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+    <p>Price Range <input type="text"></p>
+    </form>
+  </div>
+</template>
