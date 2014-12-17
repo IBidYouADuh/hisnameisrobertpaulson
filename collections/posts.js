@@ -15,6 +15,65 @@ Posts.deny({
   }
 });
 
+/*
+var Schemas = {};
+
+Schemas.Posts = new SimpleSchema({
+    title: {
+        type: String,
+        label: "Title",
+        max: 200
+    },
+    author: {
+        type: String,
+        label: "Author"
+    },
+   
+    images: {
+     type: String,
+      regEx: SimpleSchema.RegEx.Id,
+      // auxCollections: ["Images"],
+      label: "Images"
+    },
+    
+    description: {
+        type: String,
+        label: "Description"
+    },
+    
+    tags: {
+      type: String, 
+      regEx: SimpleSchema.RegEx.Id,
+      label: "Tags"
+    },
+    
+    submitted: {
+        type: Date,
+        label: "When this post was created",
+        //showWidget:false,
+        denyUpdate: true,
+        autoValue: function(){
+          if (this.isInsert)
+            return new Date();
+        }
+    },
+    userId: {
+      type: String,
+      //showWidget:false,
+      regEx: SimpleSchema.RegEx.Id,
+      denyUpdate: true,
+      autoValue: function(){
+         if (this.isInsert)
+          return Meteor.userId();
+      }
+    }
+});
+
+
+Posts.attachSchema(Schemas.Posts);
+*/
+
+
 Meteor.methods({
   post: function(postAttributes){
     

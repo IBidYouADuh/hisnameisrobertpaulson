@@ -3,3 +3,4 @@ Template.vacationItem.helpers({
      return Vacations.findOne({_id: this.vacationId});
   }
 });
+

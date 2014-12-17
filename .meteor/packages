@@ -15,6 +15,7 @@ mizzao:bootboxjs
 deepwell:bootstrap-datepicker2
 chrismbeckett:fontawesome4
 accounts-base
-yogiben:admin
 aldeed:collection2
-
+cfs:standard-packages
+cfs:filesystem
+cfs:s3

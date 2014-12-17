@@ -1,8 +1,13 @@
 body{
-  /*padding-top:80px;*/
+  padding-top:80px;
   background-color: #dbceb8;
   color: #7b898b;
   font-family: Futura, Helvetica, sans-serif;
+}
+
+.middy{
+  text-align: center;
+  color: #C97762;
 }
 
 .post-author{
